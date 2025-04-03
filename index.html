@@ -8,12 +8,18 @@
 		<title>Ip Address Tracker</title>
 	</head>
 	<body class="w-screen h-screen">
-		<section class="flex flex-col items-center justify-center gap-10 w-full pt-5 bg-[url('/pattern-bg-mobile.png')] lg:bg-[url('/pattern-bg-desktop.png')]">
+		<section
+			class="flex flex-col items-center justify-center gap-10 w-full pt-5 bg-[url('/pattern-bg-mobile.png')] lg:bg-[url('/pattern-bg-desktop.png')]"
+		>
 			<h1 class="text-2xl font-bold">IP Address Tracker</h1>
-			<div class="flex items-center justify-center flex-row-reverse h-10 min-w-[90%] sm:min-w-1/2">
-				<label for="ipInput" class="bg-black py-4 px-5 rounded-e-2xl md:w-1/7 flex flex-col items-center"
-					><img src="/icon-arrow.svg" alt="" class="w-3"
-				/></label>
+			<div
+				class="flex items-center justify-center flex-row-reverse h-10 min-w-[90%] sm:min-w-1/2"
+			>
+				<button
+					class="bg-black py-4 px-5 rounded-e-2xl md:w-1/7 flex flex-col items-center cursor-pointer" id="searchIp"
+				>
+					<img src="/icon-arrow.svg" alt="" class="w-3" />
+				</button>
 				<input
 					type="text"
 					placeholder="Search for any IP address or domain "
@@ -26,19 +32,19 @@
 			>
 				<div class="sm:min-w-1/4">
 					<p class="uppercase text-xs">IP ADDRESS</p>
-					<p class="font-bold text-xl">Data</p>
+					<p class="font-bold text-xl" id="ip-address-data">Data</p>
 				</div>
 				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
 					<p class="uppercase text-xs">LOCATION</p>
-					<p class="font-bold text-xl">Data</p>
+					<p class="font-bold text-xl" id="location-data">Data</p>
 				</div>
 				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
 					<p class="uppercase text-xs">TIMEZONE</p>
-					<p class="font-bold text-xl">Data</p>
+					<p class="font-bold text-xl" id="timezone-data">Data</p>
 				</div>
 				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
 					<p class="uppercase text-xs">ISP</p>
-					<p class="font-bold text-xl">Data</p>
+					<p class="font-bold text-xl" id="isp-data">Data</p>
 				</div>
 			</div>
 		</section>
