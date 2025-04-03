@@ -11,13 +11,35 @@
 		<section class="flex flex-col items-center justify-center gap-10">
 			<h1 class="text-2xl font-bold">IP Address Tracker</h1>
 			<div class="flex items-center justify-center flex-row-reverse h-10">
-				<label for="ipInput" class="bg-black py-4 px-5 rounded-e-2xl"><img src="/icon-arrow.svg" alt="" class="w-3" /></label>
+				<label for="ipInput" class="bg-black py-4 px-5 rounded-e-2xl"
+					><img src="/icon-arrow.svg" alt="" class="w-3"
+				/></label>
 				<input
 					type="text"
 					placeholder="Search for any IP address or domain "
 					id="ipInput"
 					class="outline-0 py-3 px-5 bg-white rounded-s-2xl"
 				/>
+			</div>
+			<div
+				class="bg-white px-10 py-5 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-5 text-center sm:text-start min-w-4/5 rounded-2xl"
+			>
+				<div class="">
+					<p class="uppercase text-xs">IP ADDRESS</p>
+					<p class="font-bold text-xl">Data</p>
+				</div>
+				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
+					<p class="uppercase text-xs">LOCATION</p>
+					<p class="font-bold text-xl">Data</p>
+				</div>
+				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
+					<p class="uppercase text-xs">TIMEZONE</p>
+					<p class="font-bold text-xl">Data</p>
+				</div>
+				<div class="sm:border-l sm:pl-5 sm:min-w-1/4">
+					<p class="uppercase text-xs">ISP</p>
+					<p class="font-bold text-xl">Data</p>
+				</div>
 			</div>
 		</section>
 		<script type="module" src="/src/main.js"></script>
