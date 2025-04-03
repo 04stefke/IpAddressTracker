@@ -10,21 +10,21 @@
 	<body class="w-screen h-screen pt-5 bg-blue-500">
 		<section class="flex flex-col items-center justify-center gap-10">
 			<h1 class="text-2xl font-bold">IP Address Tracker</h1>
-			<div class="flex items-center justify-center flex-row-reverse h-10">
-				<label for="ipInput" class="bg-black py-4 px-5 rounded-e-2xl"
+			<div class="flex items-center justify-center flex-row-reverse h-10 min-w-1/2">
+				<label for="ipInput" class="bg-black py-4 px-5 rounded-e-2xl md:w-1/7 flex flex-col items-center"
 					><img src="/icon-arrow.svg" alt="" class="w-3"
 				/></label>
 				<input
 					type="text"
 					placeholder="Search for any IP address or domain "
 					id="ipInput"
-					class="outline-0 py-3 px-5 bg-white rounded-s-2xl"
+					class="outline-0 py-3 px-5 bg-white rounded-s-2xl md:w-6/7"
 				/>
 			</div>
 			<div
 				class="bg-white px-10 py-5 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-5 text-center sm:text-start min-w-4/5 rounded-2xl"
 			>
-				<div class="">
+				<div class="sm:min-w-1/4">
 					<p class="uppercase text-xs">IP ADDRESS</p>
 					<p class="font-bold text-xl">Data</p>
 				</div>
