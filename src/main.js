@@ -20,8 +20,6 @@ let marker = L.marker([lat, lng]).addTo(map)
 
 const fetchData = async (term) => {
 	try {
-		lat = [];
-		lng = [];
 		const response = await axios.get(
 			`https://geo.ipify.org/api/v2/country,city?apiKey=at_GvJkFQiCUEBocM7CTQPZ3RPjJth1E&ipAddress=${term}`
 		);
@@ -46,31 +44,3 @@ searchIp.addEventListener("click", (e) => {
 	e.preventDefault();
 	fetchData(input.value);
 });
-
-// {ip: '178.220.45.214', location: {…}, as: {…}, isp: 'TSSRB - Telekom Srbija'}
-// as
-// :
-// {asn: 8400, name: 'TELEKOM-AS', route: '178.220.0.0/15', domain: 'telekom.rs', type: 'NSP'}
-// ip
-// :
-// "178.220.45.214"
-// isp
-// :
-// "TSSRB - Telekom Srbija"
-// location
-// :
-// country
-// :
-// "RS"
-// region
-// :
-// "Central Serbia"
-// timezone
-// :
-// "+02:00"
-// [[Prototype]]
-// :
-// Object
-// [[Prototype]]
-// :
-// Object
