@@ -7,8 +7,8 @@ const timezone = document.getElementById("timezone-data");
 const isp = document.getElementById("isp-data");
 const input = document.getElementById("ipInput");
 
-let lat = 40.7128;
-let lng = -74.006;
+let lat = 34.7887;
+let lng = -92.40766;
 const map = L.map("map").setView([lat, lng], 13);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -16,7 +16,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-let marker = L.marker([lat, lng]).addTo(map)
+let marker = L.marker([lat, lng]).addTo(map);
 
 const fetchData = async (term) => {
 	try {
@@ -35,7 +35,8 @@ const fetchData = async (term) => {
 		lng = res.location.lng;
 
 		map.setView([lat, lng], 13);
-		marker.setLatLng([lat, lng])
+
+		marker.setLatLng([lat, lng]);
 	} catch (error) {
 		console.error("Error fetching data:", error);
 	}
